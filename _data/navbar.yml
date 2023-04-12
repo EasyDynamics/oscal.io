@@ -5,8 +5,9 @@ primary:
     link: '#'
     # link: /docs/
   - name: Events
-    link: '#'
     link: /events/
+  - name: Tools
+    link: /tools/
 right:
   - name: OSCAL Viewer
     link: https://viewer.oscal.io/

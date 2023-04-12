@@ -17,6 +17,8 @@ collections:
   events:
     sort_by: start-date
     output: true
+  tools:
+    output: false
 
 plugins:
   - jekyll-feed

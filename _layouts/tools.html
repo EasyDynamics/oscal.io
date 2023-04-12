@@ -1,0 +1,27 @@
+---
+layout: page
+---
+
+{{ content }}
+
+<div class="row row-cols-1 row-cols-md-3 g-4">
+  {% for tool in site.tools %}
+  <div class="col">
+    <div class="card h-100">
+      {% if tool.featured %}
+      <div class="card-header">
+        Featured
+      </div>
+      {% endif %}
+      <div class="card-body">
+        <h2 class="h4 card-title">{{ tool.title }}</h2>
+        <p class="h6 mb-2 card-subtitle text-body-secondary">{{ tool.author }}</p>
+        <p class="card-text">{{ tool.content | strip_html | truncate_words: 20 }}</p>
+      </div>
+      <div class="card-footer">
+        <a href="{{ tool.link }}" class="card-link" target="_blank">View Details</a>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
