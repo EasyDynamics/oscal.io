@@ -1,0 +1,32 @@
+---
+layout: page
+---
+
+{{ content }}
+
+<div class="row row-cols-1 row-cols-md-3 g-4">
+  {% for event in site.events %}
+  <div class="col">
+    <div class="card h-100">
+      {% if event.featured %}
+      <div class="card-header">
+        Featured
+      </div>
+      {% endif %}
+      <div class="card-body">
+        <h2 class="h4 card-title">{{ event.name }}</h2>
+        <p class="h6 mb-2 card-subtitle text-body-secondary">{{ event.start-date | date: "%B %d %Y %I:%M %p" }}</p>
+        <p class="h6 card-subtitle text-body-teriary">{{ event.location }}</p>
+        <p class="card-text">{{ event.content }}</p>
+      </div>
+      {% if event.links %}
+      <ul class="list-group list-group-flush">
+        {% for link in event.links %}
+        <li class="list-group-item"><a href="{{ link.url }}" target="_blank">{{ link.name }}</a></li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+    </div>
+  </div>
+  {% endfor %}
+</div>
