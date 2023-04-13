@@ -17,8 +17,16 @@ collections:
   events:
     sort_by: start-date
     output: true
+    layout: page
   tools:
     output: false
+
+defaults:
+  - scope:
+      path: ''
+      type: events
+    values:
+      layout: page
 
 plugins:
   - jekyll-feed
