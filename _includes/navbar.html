@@ -13,10 +13,44 @@
         <a class="nav-item nav-link {% if page.url == item.link %}active{% endif %}" href="{{item.link}}">{{ item.name }}</a>
         {% endfor %}  
       </div>
-      <ul class="nav navbar-nav navbar-right">
+      <ul class="nav navbar-nav navbar-right align-items-center">
         {%-for item in site.data.navbar.right -%}
-        <li><a class="nav-item nav-link" href="{{ item.link }}">{{ item.name }}</a></li>
+        <li class="nav-item"><a class="nav-link" href="{{ item.link }}">{{ item.name }}</a></li>
         {% endfor %}
+        <li class="nav-item dropdown">
+          <button class="btn btn-link nav-link py-2 px-0 px-lg-2 dropdown-toggle d-flex align-items-center"
+                  id="bd-theme"
+                  type="button"
+                  aria-expanded="false"
+                  data-bs-toggle="dropdown"
+                  data-bs-display="static">
+            <li class="my-1 theme-icon-active"></li>
+            <span class="d-lg-none ms-2" id="bd-theme-text">Toggle theme</span>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="bd-theme-text">
+            <li>
+              <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light">
+                <li class="bi-sun-fill me-2 opacity-50 theme-icon"></li>
+                Light
+                <li class="bi-check2 ms-auto d-none"></li>
+              </button>
+            </li>
+            <li>
+              <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark">
+                <li class="bi-moon-stars-fill me-2 opacity-50 theme-icon"></li>
+                Dark
+                <li class="bi-check2 ms-auto d-none"></li>
+              </button>
+            </li>
+            <li>
+              <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto">
+                <li class="bi-circle-half me-2 opacity-50 theme-icon"></li>
+                Auto
+                <li class="bi-check2 ms-auto d-none"></li>
+              </button>
+            </li>
+          </ul>
+        </li>
       </ul>
     </div>
   </div>
