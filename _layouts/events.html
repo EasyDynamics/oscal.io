@@ -8,7 +8,7 @@ layout: page
   {% for event in site.events %}
   <div class="col">
     <div class="card h-100">
-      <div class="card-header bg-primary">
+      <div class="card-header bg-navy">
         <h2 class="h5 p-2 card-title text-light">
           {% comment %}
           <a href="{{ event.url }}" class="text-light link-underline-opacity-0">{{ event.title }}</a>
@@ -17,8 +17,8 @@ layout: page
         </h2>
       </div>
       <div class="card-body">
-        <p class="h6 mb-2 card-subtitle fw-bold"><i class="bi-calendar text-success"></i> {{ event.start-date | date: "%B %d %Y %I:%M %p" }}</p>
-        <p class="h6 card-subtitle fw-bold"><i class="bi-geo-alt-fill text-success"></i> {{ event.location }}</p>
+        <p class="h6 mb-2 card-subtitle fw-bold"><i class="bi-calendar text-success" title="Event time" aria-label="Event time"></i> {{ event.start-date | date: "%B %d, %Y %I:%M %p %Z" }}</p>
+        <p class="h6 card-subtitle fw-bold"><i class="bi-geo-alt-fill text-success" title="Event location" aria-label="Event location"></i> {{ event.location }}</p>
         <hr class="border border-2 border-primary">
         <p class="card-text">{{ event.content }}</p>
       </div>
@@ -27,13 +27,6 @@ layout: page
           <i class="bi-arrow-up-right fs-4"></i>
         </a>
       </div>
-      {% if false %}
-      <ul class="list-group list-group-flush">
-        {% for link in event.links %}
-        <li class="list-group-item"><a href="{{ link.url }}" target="_blank">{{ link.name }}</a></li>
-        {% endfor %}
-      </ul>
-      {% endif %}
     </div>
   </div>
   {% endfor %}
