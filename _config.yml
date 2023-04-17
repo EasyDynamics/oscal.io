@@ -17,7 +17,6 @@ collections:
   events:
     sort_by: start-date
     output: true
-    layout: page
   tools:
     output: false
 
@@ -26,7 +25,7 @@ defaults:
       path: ''
       type: events
     values:
-      layout: page
+      layout: event-details
 
 plugins:
   - jekyll-feed

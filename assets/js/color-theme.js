@@ -37,14 +37,12 @@
   const checkIcon = "bi-check2"
 
   const showActiveTheme = (theme, focus = false) => {
-    console.log(theme)
     const themeSwitcher = document.querySelector('#bd-theme')
     if (!themeSwitcher) return
     const themeSwitcherText = document.querySelector('#bd-theme-text')
     const activeThemeHolder = document.querySelector('.theme-icon-active')
     activeThemeHolder.classList.remove(...Object.values(activeThemeIconMap))
     activeThemeHolder.classList.add(activeThemeIconMap[theme])
-    console.log(activeThemeHolder.classList)
     const activeThemeButton = document.querySelector(`[data-bs-theme-value="${theme}"]`)
     const allThemeButtons = document.querySelectorAll('[data-bs-theme-value]')
     allThemeButtons.forEach((element) => {

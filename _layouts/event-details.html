@@ -1,0 +1,16 @@
+---
+layout: page
+---
+
+<p class="h6 mb-2 card-subtitle fw-bold">
+  <i class="bi-calendar text-secondary" title="Event time" aria-label="Event time"></i>
+  <span data-date-time="{{ page.start-date }}"></span>
+</p>
+
+<p class="h6 card-subtitle fw-bold">
+  <i class="bi-geo-alt-fill text-secondary" title="Event location" aria-label="Event location"></i>
+  {{ page.location }}
+</p>
+
+<p class="card-text border-top border-1 mt-3 border-black">{{ content }}</p>
+

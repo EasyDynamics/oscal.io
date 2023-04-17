@@ -1,7 +1,7 @@
 <div class="col">
   <div class="card h-100">
     <div class="card-header bg-navy">
-      <h2 class="h5 p-2 card-title text-light">
+      <h2 class="h5 p-2 card-title text-light event-card-header">
         {% comment %}
         <a href="{{ event.url }}" class="text-light link-underline-opacity-0">{{ event.title }}</a>
         {% endcomment %}
@@ -9,12 +9,18 @@
       </h2>
     </div>
     <div class="card-body">
-      <p class="h6 mb-2 card-subtitle fw-bold"><i class="bi-calendar text-secondary" title="Event time" aria-label="Event time"></i> {{ event.start-date | date: "%B %d, %Y %I:%M %p %Z" }}</p>
-      <p class="h6 card-subtitle fw-bold"><i class="bi-geo-alt-fill text-secondary" title="Event location" aria-label="Event location"></i> {{ event.location }}</p>
+      <p class="h6 mb-2 card-subtitle fw-bold">
+        <i class="bi-calendar text-secondary" title="Event time" aria-label="Event time"></i>
+        <span data-date-time="{{ event.start-date }}"></span>
+      </p>
+      <p class="h6 card-subtitle fw-bold">
+        <i class="bi-geo-alt-fill text-secondary" title="Event location" aria-label="Event location"></i>
+        <a href="{{ event.map-link }}" target="_blank">{{ event.location }}</a>
+      </p>
       <p class="card-text border-top border-1 mt-3 border-black">{{ event.content }}</p>
     </div>
     <div class="d-flex flex-row-reverse p-0 card-footer bg-transparent border-0">
-      <a class="m-0 px-3 py-2 bg-secondary text-black link-underline-opacity-0" href="{{ event.link.url }}" title="{{ event.link.name }}" target="_blank">
+      <a class="m-0 px-3 py-2 bg-secondary text-black link-underline-opacity-0" href="{{ event.link.url | default: event.url }}" title="{{ event.link.name | default: "Event Details" }}" target="_blank">
         <i class="bi-arrow-up-right fs-4"></i>
       </a>
     </div>

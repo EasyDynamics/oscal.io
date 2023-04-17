@@ -24,9 +24,11 @@
   }
 }
 
+$bgcolor: rgba(0, 17, 49, .93);
+
 .cover {
-  text-align: center;
   opacity: 0.93;
+  text-align: center;
   min-height: calc(100vh - 4em);
 }
 
