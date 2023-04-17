@@ -1,28 +1,16 @@
 ---
 ---
+// Roboto fonts
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
+// Bootstrap icons
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css");
 
 @import "bootstrap/functions";
 
-$primary: #023E88;
-$secondary: #00BDE3;
-// $light: #CFCED3;
-// $dark: #1C2327;
-
-// Override the colors from the Boostrap color map using the EDC colors
-$blue: #002867;
-$purple: #451298;
-$orange: #FF6600;
-$yellow: #FEB300;
-
+@import "colors";
 @import "bootstrap/variables";
 @import "bootstrap/variables-dark";
-
-$custom-colors: (
-  "navy": #001C50
-);
-$theme-colors: map-merge($theme-colors, $custom-colors);
-
+@import "customize";
 
 @import "bootstrap/maps";
 @import "bootstrap/mixins";

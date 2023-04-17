@@ -1,0 +1,42 @@
+---
+---
+@import "bootstrap/functions";
+@import "colors";
+@import "bootstrap/variables";
+@import "bootstrap/variables-dark";
+@import "customize";
+@import "bootstrap/maps";
+@import "bootstrap/mixins";
+@import "bootstrap/root";
+
+.cover-text {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 4em;
+}
+
+@include media-breakpoint-down(sm) {
+  .cover-text {
+    font-weight: bold;
+    font-size: 2em;
+  }
+}
+
+.cover {
+  text-align: center;
+  opacity: 0.93;
+}
+
+.navbar {
+  opacity: 0.93;
+}
+
+ul.text-list {
+  list-style: none;
+}
+ul.text-list li::before {
+  content: "•";
+  color: #00BDE3;
+  display: inline-block;
+  width: 1em;
+}

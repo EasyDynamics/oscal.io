@@ -2,6 +2,103 @@
 layout: home
 ---
 
+<div class="">
+  <!-- Top of page with background -->
+  <div class="cover container-flex p-5 mx-auto bg-navy text-white">
+    <div class="container">
+      <h1 class="cover-text">Next Generation<br> Security Authorizations</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+        aliqua.</p>
+      <a class="btn btn-primary" href="#">Learn More</a>
+      <a class="btn btn-secondary" href="/events/">View Events</a>
+    </div>
+  </div>
+
+  <!-- Main informational content -->
+  <div class="container my-3">
+    <div class="row">
+      <!-- Side float -->
+      <aside class="col-md-3 col-sm-12">
+        <h2>About the Project</h2>
+        <a class="btn btn-primary" href="">Learn More</a>
+      </aside>
+      <div class="col-md-9 col-sm-12">
+        <h3>Overview</h3>
+        <p>
+          NIST is developing the Open Security Controls Assessment Language (OSCAL) as a standardized, data-centric framework
+          that can be applied to an information system for documenting and assessing its security controls. Today, security
+          controls and control baselines are represented in proprietary formats, requiring data conversion and manual effort
+          to describe their implementation. An important goal of OSCAL is to move the security controls and control baselines
+          from a text-based and manual approach (using word processors or spreadsheets) to a set of standardized and
+          machine-readable formats. With systems security information represented in OSCAL, security professionals will be
+          able to automate security assessment, auditing, and continuous monitoring processes.
+        </p>
+
+        <h3>Why OSCAL?</h3>
+        <p>
+        There are a number of complicating factors contributing to the challenges faced by information system security professionals today.
+        </p>
+        <ul class="text-list">
+          <li>Multiple regulatory standards and frameworks, which change over time;</li>
+          <li>Regulatory standards and frameworks overlap in scope and can often conflict or be difficult to manage together; and</li>
+          <li>Information systems are increasing in size and complexity.</li>
+        </ul>
+        <p>
+        To address information security and privacy risks, the implementation of selected controls needs to be verified and shown to be effective. To provide assurance of a system's security and privacy posture, the control implementation of a system must be both correctly described, assessed, and authorized. These tasks are resource-intensive, and often challenging to perform within budget constraints given the complexity of the problem.
+        </p>
+        <p>
+        The standardized formats provided by the OSCAL project help to streamline and standardize the processes of documenting, implementing and assessing security controls. The automation enabled by the OSCAL formats will reduce complexity, decrease implementation costs, and enable the simultaneous, continuous assessment of a system's security against multiple sets of requirements. Additionally, paperwork will be significantly reduced.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="mb-3">
+    <h2 class="text-center">Project Goals</h2>
+    <!-- Cards -->
+    <div class="container">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="bg-navy text-white p-3 h-100">
+            <img src="{{ "assets/img/iconmonstr-file-6.svg" | relative_url }}" class="mb-2">
+            <h3>Decrease Paperwork</h3>
+            <p>Drive a large decrease in the paperwork burden for both information security professionals and vendors.</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="bg-navy text-white p-3 h-100">
+            <img src="{{ "assets/img/iconmonstr-time-7.svg" | relative_url }}" class="mb-2">
+            <h3>Improve System Security Assessments</h3>
+            <p>Improve the efficiency, timeliness, accuracy, and consistency of system security assessments.</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="bg-navy text-white p-3 h-100">
+            <img src="{{ "assets/img/iconmonstr-shield-33.svg" | relative_url }}" class="mb-2">
+            <h3>Enable Continuous Assessment</h3>
+            <p>Allow a system's security state to be assessed more often, ideally continuously, driving continuous assurance.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mb-5">
+    <h2 class="text-center">Events</h2>
+    <div class="container">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        {% for event in site.events limit:3 %}
+          {% include event-card.html event=event %}
+        {% endfor %}
+      </div>
+      <div class="text-center mt-2">
+        <a class="btn btn-primary" href="/events/">View all events</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--
 <div class="container col-xl-10 col-xxl-8 px-4 py-5">
   <div class="row align-items-center g-lg-5 py-5">
     <div class="col-lg-7 text-center text-lg-start">
@@ -22,3 +119,4 @@ layout: home
     </div>
   </div>
 </div>
+-->

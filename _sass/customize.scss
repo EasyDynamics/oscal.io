@@ -1,0 +1,5 @@
+$custom-colors: (
+  "navy": #001131
+);
+$theme-colors: map-merge($theme-colors, $custom-colors);
+$font-family-sans-serif: "Roboto", system-ui, san-serif;
