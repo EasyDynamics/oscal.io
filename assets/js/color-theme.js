@@ -72,7 +72,10 @@
     document.querySelectorAll('[data-bs-theme-value]')
       .forEach(toggle => {
         toggle.addEventListener('click', () => {
-          const theme = toggle.getAttribute('data-bs-theme-value')
+          // TODO: Re-enable this after we have fixed the display issues with the
+          // theme toggle dropdown
+          // const theme = toggle.getAttribute('data-bs-theme-value')
+          const theme = 'light';
           localStorage.setItem('theme', theme)
           setTheme(theme)
           showActiveTheme(theme, true)
