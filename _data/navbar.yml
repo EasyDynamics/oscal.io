@@ -1,13 +1,18 @@
 primary:
-  - name: About
-    link: /about/
-  - name: Docs
-    link: '#'
-    # link: /docs/
-  - name: Events
-    link: /events/
-  - name: Tools
-    link: /tools/
+  #   - name: About
+  #     link: /about/
+  #   - name: Docs
+  #     link: '#'
+  #     # link: /docs/
+  #   - name: Events
+  #     link: /events/
+  #   - name: Tools
+  #     link: /tools/
 right:
-  - name: OSCAL Viewer
+  - name: About
+    link: '/#about'
+  - name: Events
+    link: '/#events'
+  - name: Viewer
     link: https://viewer.oscal.io/
+    emphasize: true

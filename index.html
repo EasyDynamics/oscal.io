@@ -6,28 +6,25 @@ layout: home
   <!-- Top of page with background -->
   <div class="cover container-fluid d-flex mx-auto bg-primary text-white">
     <div class="container d-flex align-items-center">
-      <div class="align-center mx-auto">
-        <div class="d-flex flex-row">
-          <h1 class="cover-text">Next Generation<br>Security Authorizations</h1>
-        </div>
-        <div class="d-flex flex-row">
-          <p>
-          Community support for Open Security Controls Assessment Language (OSCAL)-enabled applications
-          </p>
-        </div>
-        <a class="btn btn-secondary" href="#">Learn More</a>
-        <a class="btn btn-primary" href="/events/">View Events</a>
+      <div class="text-center mx-auto">
+        <h1 class="cover-text text-center">Next Generation<br>Risk Management<br>Starts Here</h1>
+        <p class="text-center lead">
+        Community support for Open Security Controls Assessment Language (OSCAL)-enabled applications
+        </p>
+        <a class="btn btn-lg btn-secondary" href="#">Learn More</a>
+        <a class="btn btn-lg btn-primary" href="/events/">View Events</a>
       </div>
     </div>
   </div>
+
 
   <!-- Main informational content -->
   <div class="container my-3">
     <div class="row">
       <!-- Side float -->
       <aside class="col-md-3 col-sm-12">
-        <h2>About the Project</h2>
-        <a class="btn btn-secondary" href="">Learn More</a>
+        <h2 id="about">About the Project</h2>
+        <a class="btn btn-lg btn-secondary" href="">Learn More</a>
       </aside>
       <div class="col-md-9 col-sm-12">
         <h3>Overview</h3>
@@ -40,6 +37,36 @@ layout: home
           machine-readable formats. With systems security information represented in OSCAL, security professionals will be
           able to automate security assessment, auditing, and continuous monitoring processes.
         </p>
+
+        <div class="mb-3">
+          <h2 class="text-center">Project Goals</h2>
+          <!-- Cards -->
+          <div class="container">
+            <div class="row row-cols-1 row-cols-md-3 g-5">
+              <div class="col">
+                <div class="bg-navy text-white p-4 h-100">
+                  <img src="{{ "assets/img/iconmonstr-file-6.svg" | relative_url }}" class="mb-2">
+                  <h3>Decrease Paperwork</h3>
+                  <p>Drive a large decrease in the paperwork burden for both information security professionals and vendors.</p>
+                </div>
+              </div>
+              <div class="col">
+                <div class="bg-navy text-white p-4 h-100">
+                  <img src="{{ "assets/img/iconmonstr-time-7.svg" | relative_url }}" class="mb-2">
+                  <h3>Improve System Security Assessments</h3>
+                  <p>Improve the efficiency, timeliness, accuracy, and consistency of system security assessments.</p>
+                </div>
+              </div>
+              <div class="col">
+                <div class="bg-navy text-white p-4 h-100">
+                  <img src="{{ "assets/img/iconmonstr-shield-33.svg" | relative_url }}" class="mb-2">
+                  <h3>Enable Continuous Assessment</h3>
+                  <p>Allow a system's security state to be assessed more often, ideally continuously, driving continuous assurance.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
         <h3>Why OSCAL?</h3>
         <p>
@@ -60,38 +87,8 @@ layout: home
     </div>
   </div>
 
-  <div class="mb-3">
-    <h2 class="text-center">Project Goals</h2>
-    <!-- Cards -->
-    <div class="container">
-      <div class="row row-cols-1 row-cols-md-3 g-5">
-        <div class="col">
-          <div class="bg-navy text-white p-4 h-100">
-            <img src="{{ "assets/img/iconmonstr-file-6.svg" | relative_url }}" class="mb-2">
-            <h3>Decrease Paperwork</h3>
-            <p>Drive a large decrease in the paperwork burden for both information security professionals and vendors.</p>
-          </div>
-        </div>
-        <div class="col">
-          <div class="bg-navy text-white p-4 h-100">
-            <img src="{{ "assets/img/iconmonstr-time-7.svg" | relative_url }}" class="mb-2">
-            <h3>Improve System Security Assessments</h3>
-            <p>Improve the efficiency, timeliness, accuracy, and consistency of system security assessments.</p>
-          </div>
-        </div>
-        <div class="col">
-          <div class="bg-navy text-white p-4 h-100">
-            <img src="{{ "assets/img/iconmonstr-shield-33.svg" | relative_url }}" class="mb-2">
-            <h3>Enable Continuous Assessment</h3>
-            <p>Allow a system's security state to be assessed more often, ideally continuously, driving continuous assurance.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
   <div class="mb-5">
-    <h2 class="text-center">Events</h2>
+    <h2 id="events" class="text-center">Events</h2>
     <div class="container">
       <div class="row row-cols-1 row-cols-md-3 g-4">
         {% for event in site.events limit:3 %}
