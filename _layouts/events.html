@@ -4,8 +4,12 @@ layout: page
 
 {{ content }}
 
-<div class="row row-cols-1 row-cols-md-3 g-4">
-  {% for event in site.events %}
+<div class="row row-cols-1 row-cols-md-3 g-4 mb-5">
+  {%
+    assign upcomingEvents = site.events
+      | where_exp: "event", "event.start-date >= site.time"
+  %}
+  {% for event in upcomingEvents %}
     {% include event-card.html event=event %}
   {% endfor %}
 </div>

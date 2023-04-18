@@ -7,7 +7,7 @@ layout: home
   <div class="cover container-fluid d-flex mx-auto bg-primary text-white">
     <div class="container d-flex align-items-center">
       <div class="text-center mx-auto">
-        <h1 class="cover-text text-center">Next Generation<br>Risk Management<br>Starts Here</h1>
+        <h1 class="cover-lead text-center">Next Generation<br>Risk Management<br>Starts Here</h1>
         <p class="text-center lead">
         Community support for Open Security Controls Assessment Language (OSCAL)-enabled applications
         </p>
@@ -22,7 +22,7 @@ layout: home
   <div class="container my-3">
     <div class="row">
       <!-- Side float -->
-      <aside class="col-md-3 col-sm-12">
+      <aside class="col-md-3 col-sm-12 h-100">
         <h2 id="about">About the Project</h2>
         <a class="btn btn-lg btn-secondary" href="">Learn More</a>
       </aside>
@@ -91,7 +91,11 @@ layout: home
     <h2 id="events" class="text-center">Events</h2>
     <div class="container">
       <div class="row row-cols-1 row-cols-md-3 g-4">
-        {% for event in site.events limit:3 %}
+        {%
+          assign upcomingEvents = site.events
+            | where_exp: "event", "event.start-date >= site.time"
+        %}
+        {% for event in upcomingEvents limit: 3 %}
           {% include event-card.html event=event %}
         {% endfor %}
       </div>
