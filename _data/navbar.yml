@@ -12,7 +12,9 @@ right:
   - name: About
     link: '/#about'
   - name: Events
-    link: '/#events'
-  - name: Viewer
-    link: https://viewer.oscal.io/
-    emphasize: true
+    link: '/events/'
+  - name: Tools
+    link: '/tools/'
+  # - name: Viewer
+  #   link: https://viewer.oscal.io/
+  #   emphasize: true
