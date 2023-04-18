@@ -1,0 +1,66 @@
+---
+name: Add an event
+description: >-
+  Provide the necessary information for an event to the added to the community events list
+labels:
+  - events
+body:
+  - type: input
+    id: title
+    attributes:
+      label: Event title
+      description: >-
+        A short title for the event
+    validations:
+      required: true
+
+  - type: input
+    id: start-date
+    attributes:
+      label: "Start Date & Time"
+      description: >-
+        This is the date and time that the event start; preferably in ISO 8601 format, including
+        a time zone.
+    validations:
+      required: true
+  - type: input
+    id: end-date
+    attributes:
+      label: "End Date & Time"
+      description: >-
+        The date and time at which the event ends; preferably in ISO 8601 format, including a
+        time zone.
+    validations:
+      required: true
+
+  - type: input
+    id: location-name
+    attributes:
+      label: Event Location
+      description: |
+        Where is this event taking place?
+
+        If virtual, please include the software/tool used to host the meeting. If in-person,
+        please include the city where the event is taking place.
+    validations:
+      required: true
+
+  - type: input
+    id: details-page
+    attributes:
+      label: Event URL
+      description: |
+        A page (not on OSCAL.io) with additional details about the event.
+    validations:
+      required: false
+
+  - type: textarea
+    id: event-details
+    attributes:
+      label: Event Details
+      description: >-
+        A summary (or full description) of the event. Note that in the list display, this will
+        be truncated to approximately 30 words. Text beyond that will require clicking the
+        "See more" link. You may use GitHub-Flavored Markdown in this field.
+    validations:
+      required: true

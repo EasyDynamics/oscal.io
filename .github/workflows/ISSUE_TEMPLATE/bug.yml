@@ -1,0 +1,31 @@
+---
+name: Report a problem
+description: Provide information about a mistake or erro
+labels:
+  - bug
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: >-
+        Please provide a general overview of the problem you are reporting.
+    validations:
+      required: true
+  - type: input
+    id: page
+    attributes:
+      label: Page/URL
+      description: >-
+        Please provide a link to the (or a) page where the mistake/error occurs.
+    validations:
+      required: false
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: >-
+        What do you expect to see on this page instead?
+    validations:
+      required: true
+

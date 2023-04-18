@@ -30,3 +30,6 @@ defaults:
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+
+exclude:
+  - README.*
