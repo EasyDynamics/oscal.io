@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
   schedule:
     # Run daily at 03:15 UTC (10:15/11:15 ET)
-    - chron: 15 3 * * *
+    - cron: 15 3 * * *
 
 permissions:
   contents: read
