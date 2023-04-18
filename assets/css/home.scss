@@ -18,7 +18,7 @@
 // 4em "falls off" the screen of even larger mobile devices;
 // scaling down a bit fits the content a little better.
 @include media-breakpoint-down(sm) {
-  .cover-text {
+  .cover-lead {
     font-weight: bold;
     font-size: 2em;
   }
