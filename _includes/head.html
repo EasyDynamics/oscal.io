@@ -1,8 +1,32 @@
+{% comment %}
+The following assigns are done to initialize empty arrays. Liquid templates do not directly support
+the ability to initialize a new array; however, you can create arrays by splitting strings. By
+splitting an empty string on a character that it does not include, we should get an empty array.
+
+We need to create 4 empty arrays -- default values for each of the places we may need one.
+{% endcomment %}
+{% assign emptyArrayPageScript = "" | split: "!" %}
+{% assign emptyArrayLiquidScript = "" | split: "!" %}
+{% assign emptyArrayPageStyle = "" | split: "!" %}
+{% assign emptyArrayLiquidStyle = "" | split: "!" %}
+
+{% comment %}
+With the empty arrays in place, we can go ahead and make defaults for page and layout-specific
+custom styles and scripts to apply in the <head> tag.
+{% endcomment %}
+{% assign pageScripts = page.custom-scripts | default: emptyArrayPageScript %}
+{% assign layoutScripts = layout.custom-scripts | default: emptyArrayLayoutScript %}
+{% assign pageStyles = page.custom-styles | default: emptyArrayPageStyle %}
+{% assign layoutStyles = layout.custom-styles | default: emptyArrayLayoutStyle %}
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="{{ site.theme_color }}">
   <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+  {% for stylesheet in pageStyles | concat: layoutStyles %}
+    <link rel="stylesheet" href="{{ stylesheet | relative_url }}">
+  {% endfor %}
   <link rel="icon" type="image/png" sizes="32x32" href="{{ "/assets/img/favicon-32x32.png" | relative_url }}">
   <link rel="icon" type="image/png" sizes="16x16" href="{{ "/assets/img/favicon-16x16.png" | relative_url }}">
   <script src="https://cdn.jsdelivr.net/npm/luxon@3.3.0/build/global/luxon.min.js"
@@ -13,13 +37,8 @@
     crossorigin="anonymous"></script>
   <script src="{{ "/assets/js/color-theme.js" | relative_url }}"></script>
   <script src="{{ "/assets/js/date-format.js" | relative_url }}" type="module"></script>
-  {% assign emptyArrayPage = "" | split: "!" %}
-  {% assign emptyArrayLayout = "" | split: "!" %}
-  {% assign pageScripts = page.custom-scripts | default: emptyArrayPage %}
-  {% assign layoutScripts = layout.custom-scripts | default: emptyArrayLayout %}
-  {% assign customScripts = pageScripts | concat: layoutScripts %}
-  {% for script in customScripts %}
-  <script src="{{ script | relative_url }}"></script>
+  {% for script in pageScripts | concat: layoutScripts %}
+    <script src="{{ script | relative_url }}"></script>
   {% endfor %}
   {% seo %}
 </head>

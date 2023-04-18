@@ -1,13 +1,11 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}" data-bs-theme="light">
+<html lang="{{ site.lang | default: "en-US" }}" data-bs-theme="light" class="h-100">
   <head>
     {% include head.html %}
   </head>
-  <body>
+  <body class="d-flex h-100 text-bg-dark">
     {% include navbar.html %}
-    <div class="main-content mt-3">
-      {{ content }}
-    </div>
+    {{ content }}
     {% include footer.html %}
   </body>
 </html>
