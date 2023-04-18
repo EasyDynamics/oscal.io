@@ -95,13 +95,15 @@ layout: home
           assign upcomingEvents = site.events
             | where_exp: "event", "event.start-date >= site.time"
         %}
-        {% for event in upcomingEvents limit: 3 %}
+        {% for event in upcomingEvents limit: 6 %}
           {% include event-card.html event=event %}
         {% endfor %}
       </div>
+      {% if upcomingEvents.size > 6 %}
       <div class="text-center mt-2">
         <a class="btn btn-primary" href="/events/">View all events</a>
       </div>
+      {% endif %}
     </div>
   </div>
 </div>
