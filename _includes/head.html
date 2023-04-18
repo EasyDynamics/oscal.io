@@ -13,5 +13,13 @@
     crossorigin="anonymous"></script>
   <script src="{{ "/assets/js/color-theme.js" | relative_url }}"></script>
   <script src="{{ "/assets/js/date-format.js" | relative_url }}" type="module"></script>
+  {% assign emptyArrayPage = "" | split: "!" %}
+  {% assign emptyArrayLayout = "" | split: "!" %}
+  {% assign pageScripts = page.custom-scripts | default: emptyArrayPage %}
+  {% assign layoutScripts = layout.custom-scripts | default: emptyArrayLayout %}
+  {% assign customScripts = pageScripts | concat: layoutScripts %}
+  {% for script in customScripts %}
+  <script src="{{ script | relative_url }}"></script>
+  {% endfor %}
   {% seo %}
 </head>
