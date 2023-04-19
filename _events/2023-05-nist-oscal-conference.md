@@ -9,9 +9,6 @@ link:
   url: https://www.nist.gov/news-events/events/2023/05/4th-open-security-controls-assessment-language-oscal-conference-and
 ---
 
-<p>
 NIST and the Department of Commerce are hosting the fourth annual conference focused on OSCAL. The
 conference will highlight the latest development of NIST OSCAL models and includes many prestigious
 cybersecurity experts with a passion for OSCAL.
-</p>
-

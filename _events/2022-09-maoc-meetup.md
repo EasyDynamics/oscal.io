@@ -9,7 +9,5 @@ link:
   url: https://www.meetup.com/mid-atlantic-oscal-group/events/288005561/
 ---
 
-<p>
-  This event includes a brief educational session and an open discussion forum, as well as an opportunity to network and
-  socialize with OSCAL-interested colleagues.
-</p>
+This event includes a brief educational session and an open discussion forum, as well as an opportunity to network and
+socialize with OSCAL-interested colleagues.
