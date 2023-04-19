@@ -9,12 +9,14 @@
     <div class="collapse navbar-collapse align-items-center" id="navbarSupportedContent">
       <div class="navbar-nav me-auto align-items-center">
         {%- for item in site.data.navbar.primary -%}
-        <a class="nav-item nav-link {% if page.url == item.link %}active{% endif %}" href="{{item.link}}">{{ item.name }}</a>
+        <a class="nav-item nav-link{% if page.url == item.link %} active{% endif %}" href="{{ item.link }}">{{ item.name }}</a>
         {% endfor %}  
       </div>
       <ul class="nav navbar-nav navbar-right align-items-center">
         {%-for item in site.data.navbar.right -%}
-        <li class="nav-item{% if item.emphasize %} border border-white border-1 rounded px-3{% endif %}"><a class="nav-link" href="{{ item.link }}">{{ item.name }}</a></li>
+        <li class="nav-item{% if item.emphasize %} border border-white border-1 rounded px-3{% endif %}{% if page.url == item.link %} active{% endif %}">
+          <a class="nav-link" href="{{ item.link }}">{{ item.name }}</a>
+        </li>
         {% endfor %}
         <li class="nav-item dropdown theme-select d-none">
           <button class="btn btn-link nav-link py-2 px-0 px-lg-2 dropdown-toggle d-flex align-items-center"

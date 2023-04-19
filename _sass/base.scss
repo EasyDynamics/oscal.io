@@ -37,6 +37,11 @@ h3, .h3 {
   padding-right: 1rem;
 }
 
+.nav-item.active > .nav-link {
+  color: #FFFFFF;
+  border-bottom: 2px solid $secondary;
+}
+
 .page-header {
   padding-top: 7em;
   padding-bottom: 5em;

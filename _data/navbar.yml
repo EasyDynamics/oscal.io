@@ -9,8 +9,8 @@ primary:
   #   - name: Tools
   #     link: /tools/
 right:
-  - name: About
-    link: '/#about'
+  - name: Home
+    link: '/'
   - name: Events
     link: '/events/'
   - name: Tools
