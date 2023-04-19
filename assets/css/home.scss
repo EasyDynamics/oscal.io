@@ -26,31 +26,6 @@
 
 $bgcolor: rgba(0, 17, 49, .93);
 
-.cover {
-  opacity: 0.93;
-  text-align: center;
-  min-height: calc(100vh - 4em);
-}
-
-.opaque-image-top-left {
-  background: url(../img/oscal-outline-bg@2x.png) no-repeat top left;
-  background-blend-mode: multiply;
-}
-
-.opaque-image-bottom-left {
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.75)),
-    url(../img/oscal-outline-bg.png) no-repeat bottom left;
-}
-
-.opaque-image-bottom-right {
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.75)),
-    url(../img/oscal-outline-bg.png) no-repeat bottom right;
-}
-
-.navbar {
-  opacity: 0.93;
-}
-
 ul.text-list {
   list-style: none;
 }

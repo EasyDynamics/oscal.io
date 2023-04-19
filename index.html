@@ -6,7 +6,7 @@ custom-styles:
 
 <div>
   <!-- Top of page with background -->
-  <div class="cover opaque-image-top-left container-fluid d-flex mx-auto bg-primary text-white">
+  <div class="cover bg-opaque-image-top-left container-fluid d-flex mx-auto bg-primary text-white">
     <div class="container d-flex align-items-center">
       <div class="text-center mx-auto">
         <h1 class="cover-lead text-center">Next Gen Risk Management<br>Starts Here</h1>
@@ -19,8 +19,8 @@ custom-styles:
     </div>
   </div>
 
-  <div class="cover opaque-image-bottom-left container-fluid">
-    <div class="container my-5">
+  <div class="bg-opaque-image-bottom-left">
+    <div class="container my-5 bg-opaque-image-bottom-left">
       <div class="row g-5">
         <div class="d-none d-md-block col-md-6 col-sm-12" id="businessman">
         </div>
@@ -108,20 +108,23 @@ custom-styles:
     </div>
   </div>
 
-  <div class="cover opaque-image-bottom-right container-fluid">
-    <div class="mb-5">
-      <h2 id="events" class="text-center">Events</h2>
-      <div class="container">
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-          {%
-            assign upcomingEvents = site.events
-              | where_exp: "event", "event.start-date >= site.time"
-          %}
-          {% for event in upcomingEvents limit: 6 %}
-            {% include event-card.html event=event %}
-          {% endfor %}
-        </div>
+  <div class="mb-5 bg-opaque-image-bottom-right">
+    <h2 id="events" class="text-center">Events</h2>
+    <div class="container">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        {%
+          assign upcomingEvents = site.events
+            | where_exp: "event", "event.start-date >= site.time"
+        %}
+        {% for event in upcomingEvents limit: 6 %}
+          {% include event-card.html event=event %}
+        {% endfor %}
       </div>
+      {% if upcomingEvents.size > 6 %}
+      <div class="text-center mt-2">
+        <a class="btn btn-secondary btn-lg" href="/events/">View all events</a>
+      </div>
+      {% endif %}
     </div>
   </div>
 </div>
