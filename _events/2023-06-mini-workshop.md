@@ -1,5 +1,5 @@
 ---
-start-date: 2023-06-967T11:00:00-04:00
+start-date: 2023-06-06T11:00:00-04:00
 end-date: 2023-06-06T12:00:00-04:00
 title: NIST OSCAL Mini Workshop Series
 location: Virtual (BlueJeans)
