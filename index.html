@@ -13,7 +13,7 @@ custom-styles:
         <p class="text-center lead">
         Community support for OSCAL-enabled applications
         </p>
-        <a class="btn btn-lg btn-secondary" href="#">Learn More</a>
+        <a class="btn btn-lg btn-secondary" href="/#about">Learn More</a>
         <a class="btn btn-lg btn-primary" href="/events/">View Events</a>
       </div>
     </div>
@@ -37,7 +37,10 @@ custom-styles:
             OSCAL was released on June 10, 2021 and several vendors are OSCAL-enabling their tools. These tools can be enhanced by a
             common repository of OSCAL resources.
           </p>
-          <a href="https://pages.nist.gov/OSCAL" class="btn btn-secondary btn-lg" target="_blank">Learn more <i class="bi-arrow-up-right"></i></a>
+          <a href="https://pages.nist.gov/OSCAL" class="btn btn-secondary btn-lg align-items-center" target="_blank">
+            <span>Learn More</span>
+            <img class="btn-arrow-icon" src="{{ "/assets/img/arrow.svg" | relative_url }}" alt="">
+          </a>
         </div>
       </div>
     </div>
@@ -123,7 +126,7 @@ custom-styles:
       </div>
       {% if upcomingEvents.size > 6 %}
       <div class="text-center mt-2">
-        <a class="btn btn-secondary btn-lg" href="/events/">View all events</a>
+        <a class="btn btn-secondary btn-lg" href="/events/">See More</a>
       </div>
       {% endif %}
     </div>
