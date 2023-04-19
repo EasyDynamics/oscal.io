@@ -39,12 +39,12 @@ $bgcolor: rgba(0, 17, 49, .93);
 
 .opaque-image-bottom-left {
   background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.75)),
-  url(../img/oscal-outline-bg.png) no-repeat bottom left;
+    url(../img/oscal-outline-bg.png) no-repeat bottom left;
 }
 
 .opaque-image-bottom-right {
   background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.75)),
-  url(../img/oscal-outline-bg.png) no-repeat bottom right;
+    url(../img/oscal-outline-bg.png) no-repeat bottom right;
 }
 
 .navbar {
@@ -79,4 +79,19 @@ span.circle-light {
   color: $primary;
   display: inline-block;
   width: 1em;
+}
+
+p.outline-header-num {
+  -webkit-text-stroke: 1px $secondary;
+  font-size: 2.5em;
+  color: $primary;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+}
+
+#businessman {
+  background-image: url("{{ "/assets/img/businessman.png" | relative_url }}");
+  background-repeat: no-repeat;
+  min-height: 530px;
 }

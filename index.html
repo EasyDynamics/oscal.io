@@ -19,19 +19,14 @@ custom-styles:
     </div>
   </div>
 
-
-  <!-- Main informational content -->
   <div class="cover opaque-image-bottom-left container-fluid">
-    <div class="container my-3">
-      <div class="row">
-        <!-- Side float -->
-        <aside class="col-md-3 col-sm-12 h-100">
-          <h2 id="about">About OSCAL.io</h2>
-          <a class="btn btn-lg btn-secondary" href="">Learn More</a>
-        </aside>
-        <div class="col-md-9 col-sm-12">
-          <h3>Overview</h3>
-          <p>
+    <div class="container my-5">
+      <div class="row g-5">
+        <div class="d-none d-md-block col-md-6 col-sm-12" id="businessman">
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <h2 id="about" class="pt-3">Overview</h2>
+          <p class="py-2 lead">
             The <a href="https://pages.nist.gov/OSCAL/" target="_blank">Open Security Controls Assessment Language (OSCAL)</a> was
             developed by the National Institute of Standards and
             Technology (NIST) to enable automation of risk management and compliance framework based on security controls and
@@ -41,32 +36,33 @@ custom-styles:
             OSCAL was released on June 10, 2021 and several vendors are OSCAL-enabling their tools. These tools can be enhanced by a
             common repository of OSCAL resources.
           </p>
+          <a href="https://pages.nist.gov/OSCAL" class="btn btn-secondary btn-lg" target="_blank">Learn more <i class="bi-arrow-up-right"></i></a>
         </div>
       </div>
     </div>
 
-    <div class="mb-3">
+    <div class="my-5">
       <h2 class="text-center">Goals for OSCAL.io</h2>
       <!-- Cards -->
       <div class="container">
         <div class="row row-cols-1 row-cols-md-3 g-5">
           <div class="col">
             <div class="bg-navy text-white p-4 h-100">
-              <img src="{{ "assets/img/iconmonstr-file-6.svg" | relative_url }}" class="mb-2">
-              <h3>Discover Resources</h3>
+              <img src="{{ "assets/img/folder-fill.svg" | relative_url }}" class="mb-2">
+              <h3>Discover Content</h3>
               <p>Provide a hub of OSCAL resources</p>
             </div>
           </div>
           <div class="col">
             <div class="bg-navy text-white p-4 h-100">
-              <img src="{{ "assets/img/iconmonstr-time-7.svg" | relative_url }}" class="mb-2">
+              <img src="{{ "assets/img/search.svg" | relative_url }}" class="mb-2">
               <h3>Automate Discovery</h3>
-              <p>Provide an Application Programming Interface (API) for tools to automatically query OSCAL resources</p>
+              <p>Provide an Application Programming Interface (API) for tools to automatically query for OSCAL resources</p>
             </div>
           </div>
           <div class="col">
             <div class="bg-navy text-white p-4 h-100">
-              <img src="{{ "assets/img/iconmonstr-shield-33.svg" | relative_url }}" class="mb-2">
+              <img src="{{ "assets/img/megaphone-fill.svg" | relative_url }}" class="mb-2">
               <h3>Promote Adoption</h3>
               <p>Enable new OSCAL adopters to get started</p>
             </div>
@@ -74,42 +70,40 @@ custom-styles:
         </div>
       </div>
     </div>
+  </div>
 
-    <div class="mb-5">
-      <h2 class="text-center">What to Expect</h2>
-      <div class="container">
-        <div class="row mb-3">
-          <div class="col-4">
-            <div class="bg-secondary text-dark p-5 h-100">
-              <h3><span class="circle-dark">1</span> Upcoming OSCAL Events</h3>
-              <p>Discover virtual and in-person events related to OSCAL, or add your organization's event.</p>
-            </div>
-          </div>
-
-          <div class="col-8">
-            <div class="bg-navy text-white p-5 h-100">
-              <h3><span class="circle-light">2</span> OSCAL Communication Channels</h3>
-              <p>Find out where your OSCAL colleagues are communicating with each other.</p>
-            </div>
+  <div class="mb-5 bg-primary text-white py-5">
+    <div class="container my-5">
+      <h2 class="pb-4 h1">What to Expect</h2>
+      <div class="row row-cols-md-4 row-cols-sm-1 g-5">
+        <div class="col">
+          <div class="p-4 border border-1 border-secondary h-100">
+            <p class="outline-header-num user-select-none">01</p>
+            <h3>Upcoming OSCAL Events</h3>
+            <p>Discover virtual and in-person events related to OSCAL, or add your organization's event.</p>
           </div>
         </div>
-
-        <div class="row">
-          <div class="col-8">
-            <div class="bg-primary text-white p-5 h-100">
-              <h3><span class="circle-light">3</span> OSCAL Content Directory and Repository</h3>
-              <p>Make your OSCAL catalogs, baselines (profiles) and component definitions available to all OSCAL tools.</p>
-            </div>
-          </div>
-
-          <div class="col-4">
-            <div class="bg-secondary text-dark p-5 h-100">
-              <h3><span class="circle-dark">4</span> OSCAL-Enabled Tools Directory</h3>
-              <p>Find existing OSCAL-enabled tools or list your own.</p>
-            </div>
+        <div class="col">
+          <div class="p-4 border border-1 border-secondary h-100">
+            <p class="outline-header-num user-select-none">02</p>
+            <h3>OSCAL Communication Channels</h3>
+            <p>Find out where your OSCAL colleagues are communicating with each other.</p>
           </div>
         </div>
-
+        <div class="col">
+          <div class="p-4 border border-1 border-secondary h-100">
+            <p class="outline-header-num user-select-none">03</p>
+            <h3>OSCAL Content Directory and Repository</h3>
+            <p>Make your OSCAL catalogs, baselines (profiles) and component definitions available to all OSCAL tools.</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="p-4 border border-1 border-secondary h-100">
+            <p class="outline-header-num user-select-none">04</p>
+            <h3>OSCAL-Enabled Tools Directory</h3>
+            <p>Find existing OSCAL-enabled tools or list your own.</p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
