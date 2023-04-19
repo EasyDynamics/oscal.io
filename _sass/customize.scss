@@ -3,3 +3,7 @@ $custom-colors: (
 );
 $theme-colors: map-merge($theme-colors, $custom-colors);
 $font-family-sans-serif: "Roboto", system-ui, san-serif;
+$btn-border-radius: 3px;
+$btn-border-radius-sm: 3px;
+$btn-border-radius-lg: 3px;
+$btn-font-weight: bold;
