@@ -1,5 +1,7 @@
 ---
 layout: page
+custom-scripts:
+  - "/assets/js/colorize-name.js"
 ---
 
 {{ content }}
@@ -14,12 +16,14 @@ layout: page
       </div>
       {% endif %}
       <div class="card-body">
-        <h2 class="h4 card-title">{{ tool.title }}</h2>
-        <p class="h6 mb-2 card-subtitle text-body-secondary">{{ tool.author }}</p>
-        <p class="card-text">{{ tool.content | strip_html | truncate_words: 20 }}</p>
+        <h2 class="h4 card-title fw-bold">{{ tool.title }}</h2>
+        <p class="h6 mb-0 p-1 w-0 d-inline-block tool-author-name small">{{ tool.author }}</p>
+        <p class="card-text mt-0 pt-3 border-top border-1 mt-3">{{ tool.content | strip_html | truncatewords: 20 }}</p>
       </div>
-      <div class="card-footer">
-        <a href="{{ tool.link }}" class="card-link" target="_blank">View Details</a>
+      <div class="d-flex flex-row-reverse p-0 card-footer bg-transparent border-0">
+        <a class="m-0 px-3 py-2 bg-secondary text-black link-underline-opacity-0" href="{{ tool.link }}" title="View details" target="_blank">
+          <i class="bi-arrow-up-right fs-4"></i>
+        </a>
       </div>
     </div>
   </div>

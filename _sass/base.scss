@@ -36,3 +36,13 @@ h3, .h3 {
   text-transform: uppercase;
   padding-right: 1rem;
 }
+
+.page-header {
+  padding-top: 7em;
+  padding-bottom: 5em;
+  min-height: calc(25vh - 4em);
+}
+
+.page-header-text h1 {
+  text-transform: uppercase;
+}

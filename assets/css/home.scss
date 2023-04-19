@@ -60,3 +60,23 @@ ul.text-list li::before {
   display: inline-block;
   width: 1em;
 }
+
+span.circle-dark {
+  border-radius: 50%;
+  font-size: 1em;
+  background-color: $primary;
+  text-align: center;
+  color: $secondary;
+  display: inline-block;
+  width: 1em;
+}
+
+span.circle-light {
+  border-radius: 50%;
+  font-size: 1em;
+  background-color: $secondary;
+  text-align: center;
+  color: $primary;
+  display: inline-block;
+  width: 1em;
+}
