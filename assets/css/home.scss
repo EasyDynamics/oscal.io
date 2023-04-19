@@ -32,6 +32,19 @@ $bgcolor: rgba(0, 17, 49, .93);
   min-height: calc(100vh - 4em);
 }
 
+.opaque-image-top-left {
+  background: url(../img/oscal-outline-bg@2x.png) no-repeat top left;
+  background-blend-mode: multiply;
+}
+
+.opaque-image-bottom-left {
+  background: url(../img/oscal-outline-bg.png) no-repeat bottom left;
+}
+
+.opaque-image-bottom-right {
+  background: url(../img/oscal-outline-bg.png) no-repeat bottom right;
+}
+
 .navbar {
   opacity: 0.93;
 }
