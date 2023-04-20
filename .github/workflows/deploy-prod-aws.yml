@@ -1,8 +1,6 @@
-name: Deploy Jekyll site to AWS Dev
+name: Deploy Jekyll site to AWS Production
 
 on:
-  push:
-    branches: ["main"]
   workflow_dispatch:
     inputs:
       invalidate-cache:
@@ -10,6 +8,9 @@ on:
         required: true
         type: boolean
         default: false
+  schedule:
+    # Run daily at 03:15 UTC (10:15/11:15 ET)
+    - cron: 15 3 * * *
 
 permissions:
   contents: read
@@ -18,7 +19,7 @@ permissions:
 # Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
 # However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
 concurrency:
-  group: "aws-dev"
+  group: "aws-prod"
   cancel-in-progress: false
 
 jobs:
@@ -26,8 +27,8 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     environment:
-      name: development
-      url: https://oscalio.dev
+      name: production
+      url: https://oscal.io
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -40,21 +41,18 @@ jobs:
       - name: Build with Jekyll
         run: bundle exec jekyll build
         env:
-          JEKYLL_ENV: development
-      - name: Add robots.txt file to disallow all
-        run: |
-          echo -e "User-agent: *\nDisallow: /" > _site/robots.txt
+          JEKYLL_ENV: production
       - name: Upload artifact
         uses: actions/upload-artifact@v3
         with:
-          name: oscalio-content-dev
+          name: oscalio-content-prod
           path: _site/
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v2
         with:
           role-to-assume: ${{ secrets.ROLE_ARN }}
           aws-region: ${{ vars.AWS_REGION }}
-      - name: Copy files to the dev environment
+      - name: Copy files to the production environment
         run: |
           aws s3 sync . s3://${{ secrets.S3_BUCKET_NAME }}
         working-directory: _site
