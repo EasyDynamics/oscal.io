@@ -52,21 +52,6 @@ h3, .h3 {
   text-transform: uppercase;
 }
 
-.bg-opaque-image-top-left {
-  background: url(../img/oscal-outline-bg@2x.png) no-repeat top left;
-  background-blend-mode: multiply;
-}
-
-.bg-opaque-image-bottom-left {
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.75)),
-    url(../img/oscal-outline-bg.png) no-repeat bottom left;
-}
-
-.bg-opaque-image-bottom-right {
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.75)),
-    url(../img/oscal-outline-bg.png) no-repeat bottom right;
-}
-
 .cover {
   opacity: 0.93;
   text-align: center;
@@ -80,7 +65,6 @@ h3, .h3 {
 button, .btn {
   text-transform: uppercase,
 }
-
 
 .btn-arrow-icon {
   width: 2em;

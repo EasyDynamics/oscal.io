@@ -1,0 +1,17 @@
+---
+layout: page
+custom-scripts:
+  - "/assets/js/colorize-name.js"
+---
+
+<p class="d-inline-block tool-author-name p-1">{{ page.author }}</p>
+
+<p class="card-text mt-0 pt-3 border-top border-1 mt-3">
+{{ content }}
+</p>
+
+<a class="mt-5 btn btn-secondary" href="{{ page.link }}" target="_blank">
+  View details
+  <img class="btn-arrow-icon" src="{{ "/assets/img/arrow.svg" | relative_url }}" alt="">
+</a>
+

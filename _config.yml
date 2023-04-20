@@ -19,7 +19,7 @@ collections:
     sort_by: start-date
     output: true
   tools:
-    output: false
+    output: true
 
 defaults:
   - scope:
@@ -27,6 +27,11 @@ defaults:
       type: events
     values:
       layout: event-details
+  - scope:
+      path: ''
+      type: tools
+    values:
+      layout: tool-details
 
 plugins:
   - jekyll-feed
