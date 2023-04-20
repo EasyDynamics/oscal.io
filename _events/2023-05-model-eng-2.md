@@ -1,6 +1,6 @@
 ---
-start-date: 2023-04-20T10:00:00-04:00
-end-date: 2023-04-20T11:00:00-04:00
+start-date: 2023-05-18T10:00:00-04:00
+end-date: 2023-05-18T11:00:00-04:00
 title: OSCAL Model Engineering Meeting
 location: Virtual (BlueJeans)
 map-link: https://bluejeans.com/257022218/8541
