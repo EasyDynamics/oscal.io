@@ -12,6 +12,10 @@
   const storedTheme = localStorage.getItem('theme')
 
   const getPreferredTheme = () => {
+    // TODO: Have this actually perform detection when we know the site looks good
+    // in both light and dark mode.
+    return 'light'
+
     if (storedTheme) {
       return storedTheme
     }
