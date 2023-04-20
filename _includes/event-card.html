@@ -10,11 +10,11 @@
     </div>
     <div class="card-body">
       <p class="h6 mb-2 card-subtitle fw-bold">
-        <i class="bi-calendar text-secondary" title="Event time" aria-label="Event time"></i>
+        <i class="bi-calendar text-secondary" title="Event time" role="img" aria-label="Event time"></i>
         <span data-date-time="{{ event.start-date | date_to_xmlschema }}"></span>
       </p>
       <p class="h6 card-subtitle fw-bold">
-        <i class="bi-geo-alt-fill text-secondary" title="Event location" aria-label="Event location"></i>
+        <i class="bi-geo-alt-fill text-secondary" title="Event location" role="img" aria-label="Event location"></i>
         {% if event.map-link %}
           <a href="{{ event.map-link }}" target="_blank">{{ event.location }}</a>
         {% else %}
