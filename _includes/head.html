@@ -11,15 +11,16 @@ We need to create 2 empty arrays -- default values for each of the places we may
 {% assign layoutStyles = layout.custom-styles | default: emptyArrayLayoutStyle %}
 {% assign customStyles = pageStyles | concat: layoutStyles %}
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="{{ site.theme_color }}">
-  <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
-  {% for stylesheet in customStyles %}
-    <link rel="stylesheet" href="{{ stylesheet | relative_url }}">
-  {% endfor %}
-  <link rel="icon" type="image/png" sizes="32x32" href="{{ "/assets/img/favicon-32x32.png" | relative_url }}">
-  <link rel="icon" type="image/png" sizes="16x16" href="{{ "/assets/img/favicon-16x16.png" | relative_url }}">
-  {% seo %}
-</head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="{{ site.theme_color }}">
+<link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+{% for stylesheet in customStyles %}
+  <link rel="stylesheet" href="{{ stylesheet | relative_url }}">
+{% endfor %}
+<link rel="icon" type="image/png" sizes="32x32" href="{{ "/assets/img/favicon-32x32.png" | relative_url }}">
+<link rel="icon" type="image/png" sizes="16x16" href="{{ "/assets/img/favicon-16x16.png" | relative_url }}">
+{% seo %}
+{% if site.ga4code and jekyll.environment == "production" %}
+{% include google-analytics.html %}
+{% endif %}

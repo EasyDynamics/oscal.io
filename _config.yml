@@ -6,6 +6,7 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 author: Easy Dynamics Corp
 copyrightyear: "2023"
 contactemail: oscal@easydynamics.com
+ga4code: "G-532JFQZHHC"
 
 collections:
   events:
