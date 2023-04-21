@@ -9,6 +9,6 @@ link:
   url: https://pages.nist.gov/OSCAL/contribute/define-meeting/
 ---
 
-OSCAL DEFINE meetigns discuss the research and educational pursuits of OSCAL. The topic for
+OSCAL DEFINE meetings discuss the research and educational pursuits of OSCAL. The topic for
 this meeting has not yet been announced.
 

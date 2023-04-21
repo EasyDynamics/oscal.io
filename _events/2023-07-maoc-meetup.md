@@ -10,6 +10,6 @@ link:
 ---
 
 The July MAOC meetup will feature a presentation from DRT Strategies on their OSCAL journey
-to deliverying the first full OSCAL package submission to FedRAMP.
+to delivering the first full OSCAL package submission to FedRAMP.
 
 The meeting location will be announced soon.
