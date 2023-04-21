@@ -7,13 +7,6 @@ author: Easy Dynamics Corp
 copyrightyear: "2023"
 contactemail: oscal@easydynamics.com
 
-kramdown:
-  input: GFM
-  # syntax_highlighter: rouge
-  # syntax_highlighter_opts:
-  #   span:
-  #     disable: true
-
 collections:
   events:
     sort_by: start-date
