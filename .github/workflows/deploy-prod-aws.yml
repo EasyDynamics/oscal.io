@@ -1,7 +1,13 @@
-name: Deploy Jekyll site to AWS Dev
+name: Deploy Jekyll site to AWS Production
 
 on:
   workflow_dispatch:
+    inputs:
+      invalidate-cache:
+        description: "Invalidate CloudFront cache"
+        required: true
+        type: boolean
+        default: false
   schedule:
     # Run daily at 03:15 UTC (10:15/11:15 ET)
     - cron: 15 3 * * *
@@ -51,5 +57,6 @@ jobs:
           aws s3 sync . s3://${{ secrets.S3_BUCKET_NAME }}
         working-directory: _site
       - name: Invalidate CloudFront cache
+        if: ${{ inputs.invalidate-cache }}
         run: |
           aws cloudfront create-invalidation --distribution-id ${{ vars.DISTRIBUTION_ID }} --paths "/*"

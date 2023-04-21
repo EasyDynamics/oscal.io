@@ -4,6 +4,12 @@ on:
   push:
     branches: ["main"]
   workflow_dispatch:
+    inputs:
+      invalidate-cache:
+        description: "Invalidate CloudFront cache"
+        required: true
+        type: boolean
+        default: false
 
 permissions:
   contents: read
@@ -53,5 +59,6 @@ jobs:
           aws s3 sync . s3://${{ secrets.S3_BUCKET_NAME }}
         working-directory: _site
       - name: Invalidate CloudFront cache
+        if: ${{ inputs.invalidate-cache }}
         run: |
           aws cloudfront create-invalidation --distribution-id ${{ vars.DISTRIBUTION_ID }} --paths "/*"
