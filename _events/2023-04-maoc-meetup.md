@@ -10,4 +10,4 @@ link:
 ---
 
 This meetup is going to be a moderated open discussion on OSCAL adoption. This discussion will be
-moderated by <a href="https://www.linkedin.com/in/pirooz-javan-0516251/" target="_blank">Pirooz Javan</a>.
+moderated by [Pirooz Javan](https://www.linkedin.com/in/pirooz-javan-0516251/){:target="_blank"}.
