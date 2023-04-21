@@ -19,6 +19,7 @@ collections:
     sort_by: start-date
     output: true
   tools:
+    sort_by: author
     output: true
 
 defaults:
