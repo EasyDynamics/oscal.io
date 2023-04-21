@@ -81,3 +81,7 @@ This can be done using HTML if you used the `.html` file extension or using Mark
 the `.md` file extension (you are free to rename your file if required).
 
 Once done, you may open a pull request which the team will review for publishing. 
+
+## License
+
+The site content is available under the terms of the [CC-BY-SA 4.0 License](./LICENSE).
