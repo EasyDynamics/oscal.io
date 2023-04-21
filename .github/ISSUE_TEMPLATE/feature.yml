@@ -1,0 +1,26 @@
+---
+name: Feature request
+description: Suggest a new feature or capability for the site
+labels:
+  - enhancement
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: >-
+        Provide an overview of what you want to see added and how it may benefit
+        the OSCAL community to feature it on the site
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Additional Notes
+      description: >-
+        Provide any additional thoughts or context that may be useful when
+        considering the feature request, including examples or more detailed
+        use cases
+    validations:
+      required: false
+
