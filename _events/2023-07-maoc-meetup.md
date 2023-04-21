@@ -9,7 +9,7 @@ link:
   url: https://www.meetup.com/mid-atlantic-oscal-group/events/291166647/
 ---
 
-The July MAOC meetuo will feature a presentation from DRT Strategies on their OSCAL journey
+The July MAOC meetup will feature a presentation from DRT Strategies on their OSCAL journey
 to deliverying the first full OSCAL package submission to FedRAMP.
 
 The meeting location will be announced soon.
