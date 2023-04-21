@@ -27,7 +27,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     environment:
-      name: development
+      name: production
       url: https://oscal.io
     steps:
       - name: Checkout
