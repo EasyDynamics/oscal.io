@@ -65,8 +65,8 @@ p.outline-header-num {
   font-weight: bold;
 }
 
-#businessman {
-  background-image: url("{{ "/assets/img/businessman.png" | relative_url }}");
+#oscal-layers {
+  background-image: url("{{ "/assets/img/oscal-layers.svg" | relative_url }}");
   background-repeat: no-repeat;
   min-height: 530px;
 }

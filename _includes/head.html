@@ -18,6 +18,7 @@ We need to create 2 empty arrays -- default values for each of the places we may
 {% for stylesheet in customStyles %}
   <link rel="stylesheet" href="{{ stylesheet | relative_url }}">
 {% endfor %}
+<link rel="icon" type="image/svg+xml" href="{{ "/assets/img/favicon.svg" | relative_url }}">
 <link rel="icon" type="image/png" sizes="32x32" href="{{ "/assets/img/favicon-32x32.png" | relative_url }}">
 <link rel="icon" type="image/png" sizes="16x16" href="{{ "/assets/img/favicon-16x16.png" | relative_url }}">
 {% seo %}
