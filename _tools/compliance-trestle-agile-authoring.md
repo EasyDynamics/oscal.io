@@ -1,5 +1,5 @@
 ---
-title: Compliance Trestle Agile Autohring
+title: Compliance Trestle Agile Authoring
 author: IBM
 license: Apache-2.0 license
 link: https://github.com/oscal-compass/compliance-trestle-agile-authoring
