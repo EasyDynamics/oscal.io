@@ -1,4 +1,7 @@
 ---
+# Timestamps should be in RFC 3339 format. US Eastern Time is 
+# UTC-04:00 from Mar-Nov
+# UTC-05:00 from Nov-Mar
 start-date:
 end-date:
 title:
