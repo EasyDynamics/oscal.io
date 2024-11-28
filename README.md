@@ -40,7 +40,8 @@ expedite the process.
 #### Details to add an event
 
 Event information is stored in the `_events/` directory. To add a new a event, create a file in
-that folder using a `.html` or `.md` file extension. Start your file with the following content:
+that folder using a `.html` or `.md` file extension. Start your file with the following content
+(or copy the template file `event-frontmatter.txt`):
 
 ```md
 ---
@@ -56,7 +57,8 @@ The first field to add is the title; between the sets of dashes add a like that 
 On a new line, add a line that begins with `start-date: ` and then format the start date of the
 event using ISO 8601 format including the event time zone. For example,
 `2023-04-17T22:07:43-04:00`. Then add a line that begins with `end-date: ` and do the same for
-end date/time of the event.
+end date/time of the event. Remember that Eastern Time in the US is `-04:00` during the
+summer (EDT) and `-05:00` during the winter (EST).
 
 Next, add a line that begins with `location: ` and add a human-readable location for where the
 event takes place. This should include the name of the building/business and the city where the
