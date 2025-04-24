@@ -45,7 +45,7 @@ jobs:
         run: |
           echo -e "User-agent: *\nDisallow: /" > _site/robots.txt
       - name: Upload artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: oscalio-content-dev
           path: _site/
