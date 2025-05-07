@@ -1,0 +1,29 @@
+matrix:
+  - name: Markdown
+    aspell:
+      ignore-case: true
+      lang: en
+    dictionary:
+      wordlists:
+        - .wordlist.txt
+      encoding: utf-8
+    pipeline:
+      - pyspelling.filters.context:
+          context_visible_first: true
+          escapes: '\\[\\`~]'
+          delimiters:
+          # Ignore multiline content between fences (fences can have 3 or more back ticks)
+          # ```
+          # content
+          # ```
+          - open: '(?s)^(?P<open> *-{3,})$'
+            close: '^(?P=open)$'
+      - pyspelling.filters.markdown:
+      - pyspelling.filters.html:
+          comments: false
+          ignores:
+            - code
+            - pre
+    sources:
+      - '_tools/*.md'
+      - '_events/*.md'

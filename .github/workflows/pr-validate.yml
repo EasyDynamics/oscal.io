@@ -31,3 +31,16 @@ jobs:
         with:
           name: oscal.io-content
           path: _site
+  spellcheck:
+    name: Check spelling
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+        with:
+          submodules: 'recursive'
+      - name: Spell check
+        uses: rojopolis/spellcheck-github-actions@0.30.0
+      - name: Check wordlist.txt is sorted
+        run: |
+          sort -fu .wordlist.txt | diff -Nau .wordlist.txt -
