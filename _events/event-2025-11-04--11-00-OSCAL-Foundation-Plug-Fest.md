@@ -6,7 +6,7 @@ location: "Venable, 600 Massachusetts Ave NW, Washington, DC"
 map-link: https://maps.app.goo.gl/hgMCUpg2kg6efoKY9
 link:
   name: "OSCAL Foundation Plug Fest"
-  url: https://oscalfoundation.org/oscal-plugfest-in-washington-dc-save-the-date/
+  url: https://www.connect.venable.com/26/5114/landing-pages/rsvp-blank.asp
 ---
 
 The OSCAL Foundation is excited to announce our upcoming OSCAL Plugfest taking place in-person on November 4, 2025 at Venable LLP’s Offices at 600 Massachusetts Ave NW, Washington, DC.
@@ -22,3 +22,5 @@ Mark your calendars for November 4, 2025, in Washington, DC.
 More details, including registration and agenda, will follow soon.
 
 We look forward to seeing you there and working together to drive OSCAL forward!
+
+[Please Register](https://www.connect.venable.com/26/5114/landing-pages/rsvp-blank.asp)
