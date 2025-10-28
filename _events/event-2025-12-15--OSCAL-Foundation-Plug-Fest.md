@@ -1,6 +1,6 @@
 ---
-start-date: 2025-11-04T11:00:00-04:00
-end-date: 2025-11-04T12:00:00-04:00
+start-date: 2025-12-15T11:00:00-04:00
+end-date: 2025-12-15T12:00:00-04:00
 title: "OSCAL Foundation: Plug Fest"
 location: "Venable, 600 Massachusetts Ave NW, Washington, DC"
 map-link: https://maps.app.goo.gl/hgMCUpg2kg6efoKY9
