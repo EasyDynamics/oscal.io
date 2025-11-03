@@ -9,7 +9,7 @@ link:
   url: https://www.connect.venable.com/26/5114/landing-pages/rsvp-blank.asp
 ---
 
-The OSCAL Foundation is excited to announce our upcoming OSCAL Plugfest taking place in-person on November 4, 2025 at Venable LLP’s Offices at 600 Massachusetts Ave NW, Washington, DC.
+The OSCAL Foundation is excited to announce our upcoming OSCAL Plugfest taking place in-person on December 15, 2025 at Venable LLP’s Offices at 600 Massachusetts Ave NW, Washington, DC.
 
 This hands-on event will bring together OSCAL users, vendors, and the broader community to collaborate on real-world technical challenges and workstreams. Participants will roll up their sleeves to tackle focused problems, share expertise, and advance the OSCAL ecosystem.
 
@@ -17,7 +17,7 @@ The morning session will include a hackathon, where we invite technical experts 
 
 In addition to the hackathon, the afternoon session will feature presentations and discussions highlighting OSCAL’s role as both a technical standard and a practical solution for government and private sector challenges moving forward.
 
-Mark your calendars for November 4, 2025, in Washington, DC.
+Mark your calendars for December 15, 2025, in Washington, DC.
 
 More details, including registration and agenda, will follow soon.
 
