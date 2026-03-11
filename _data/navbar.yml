@@ -14,7 +14,7 @@ right:
   - name: Events
     link: '/events/'
   - name: Content Registry
-    link: 'https://registry.oscal.io/documents'
+    link: 'https://registry.oscal.io'
   - name: API SPEC
     link: 'https://docs.oscal.io/docs/oscal-rest-openapi'
   - name: Tools
