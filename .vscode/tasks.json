@@ -1,0 +1,39 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Jekyll: Serve",
+      "type": "shell",
+      "command": "bundle exec jekyll serve --livereload",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": [],
+      "detail": "Serve the Jekyll site locally with live reload",
+      "isBackground": true
+    },
+    {
+      "label": "Jekyll: Build",
+      "type": "shell",
+      "command": "bundle exec jekyll build",
+      "group": "build",
+      "problemMatcher": [],
+      "detail": "Build the Jekyll site"
+    },
+    {
+      "label": "Jekyll: Clean",
+      "type": "shell",
+      "command": "bundle exec jekyll clean",
+      "problemMatcher": [],
+      "detail": "Clean the Jekyll build output"
+    },
+    {
+      "label": "Bundle: Install",
+      "type": "shell",
+      "command": "bundle install",
+      "problemMatcher": [],
+      "detail": "Install Ruby gem dependencies"
+    }
+  ]
+}
