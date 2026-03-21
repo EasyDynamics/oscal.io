@@ -1,0 +1,14 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "ruby_lsp",
+      "name": "Debug Jekyll Serve",
+      "request": "launch",
+      "program": "bundle exec jekyll serve --livereload",
+      "env": {
+        "JEKYLL_ENV": "development"
+      }
+    }
+  ]
+}
