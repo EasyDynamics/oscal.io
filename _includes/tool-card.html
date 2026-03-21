@@ -1,4 +1,4 @@
-<div class="col">
+<div class="col" data-category="{{ tool.category | join: ' ' }}">
   <div class="card h-100">
     {% if tool.featured %}
     <div class="card-header">
@@ -7,7 +7,25 @@
     {% endif %}
     <div class="card-body">
       <h2 class="h4 card-title fw-bold">{{ tool.title }}</h2>
-      <p class="h6 mb-0 p-1 w-0 d-inline-block tool-author-name small">{{ tool.author }}</p>
+      <div class="d-flex align-items-center flex-wrap gap-2 mb-2">
+        <p class="h6 mb-0 p-1 w-0 d-inline-block tool-author-name small">{{ tool.author }}</p>
+        {% assign cats = tool.category | join: ' ' %}
+        {% if cats contains "commercial" %}
+          <span class="badge bg-warning text-dark">{{ tool.pricing | default: "Commercial" }}</span>
+        {% endif %}
+        {% if cats contains "international" %}
+          <span class="badge bg-info text-dark"><i class="bi bi-globe2"></i> {{ tool.country }}</span>
+        {% endif %}
+        {% if tool.license %}
+          <span class="badge bg-success">{{ tool.license }}</span>
+        {% elsif tool.pricing %}
+          <span class="badge bg-success">{{ tool.pricing }}</span>
+        {% else %}
+          {% unless cats contains "commercial" %}
+            <span class="badge bg-secondary">No license specified</span>
+          {% endunless %}
+        {% endif %}
+      </div>
       <p class="card-text mt-0 pt-3 border-top border-1 mt-3">
       {% assign truncateText = '… <a href="' | append: tool.url | append: '">See more</a>' %}
       {{ tool.content | truncatewords: 30, truncateText }}

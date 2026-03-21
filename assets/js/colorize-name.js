@@ -1,6 +1,8 @@
 const knownAuthors = {
   'Easy Dynamics': '#FF6600',
   'NIST': '#000000',
+  'NTT Data': '#1D2B6C',
+  'Telos': '#003A70',
 }
 
 const colorizeName = (name) => {
