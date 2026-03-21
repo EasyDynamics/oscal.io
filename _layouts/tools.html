@@ -2,11 +2,19 @@
 layout: page
 custom-scripts:
   - "/assets/js/colorize-name.js"
+  - "/assets/js/filter-tools.js"
 ---
 
 {{ content }}
 
-<div class="row row-cols-1 row-cols-md-3 g-4">
+<div class="d-flex flex-wrap gap-2 mb-4" id="tool-filters">
+  <button class="btn btn-secondary active" data-filter="all">All</button>
+  <button class="btn btn-outline-secondary" data-filter="open-source">Open Source</button>
+  <button class="btn btn-outline-secondary" data-filter="commercial">Commercial</button>
+  <button class="btn btn-outline-secondary" data-filter="international">International</button>
+</div>
+
+<div class="row row-cols-1 row-cols-md-3 g-4" id="tool-grid">
   {% for tool in site.tools %}
   {% include tool-card.html tool=tool %}
   {% endfor %}
