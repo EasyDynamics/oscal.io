@@ -3,7 +3,9 @@ title: Rust Toolbox for OSCAL
 author: Geoffrey Borough
 license: MIT & Apache-2.0 license
 link: https://github.com/gborough/roscal
-category: open-source
+category:
+  - open-source
+  - free
 ---
 
 The "roscal" code repository provides Rust-based tools and libraries for OSCAL, focusing on 

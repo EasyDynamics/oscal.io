@@ -3,7 +3,9 @@ title: OSCAL Viewer
 author: Easy Dynamics
 license: MIT
 link: https://viewer.oscal.io
-category: open-source
+category:
+  - open-source
+  - free
 ---
 
 A React application

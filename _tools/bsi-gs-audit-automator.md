@@ -1,9 +1,11 @@
 ---
 title: BSI Grundschutz Audit Automator
 author: NTT Data
+license: BUSL-1.1
 link: https://github.com/NTTDATA-DACH/NTT-DATA-Audit-Automator
 category:
-  - open-source
+  - source-available
+  - free
   - international
 country: Germany
 ---

@@ -5,6 +5,7 @@ license: CC BY-SA 4.0
 link: https://github.com/AG-3-Nutzergenerierte-Inhalte/Stand-der-Technik-Bibliothek/tree/main/Nutzergenerierte-Inhalte/tools
 category:
   - open-source
+  - free
   - international
 country: Germany
 ---
