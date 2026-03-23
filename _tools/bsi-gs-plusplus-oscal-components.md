@@ -5,6 +5,7 @@ license: Apache-2.0 license
 link: https://github.com/AG-3-Nutzergenerierte-Inhalte/AG-3-Tooling/tree/main/ai_tool
 category:
   - open-source
+  - free
   - international
 country: Germany
 ---

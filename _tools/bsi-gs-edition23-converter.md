@@ -5,6 +5,7 @@ license: Apache-2.0 license
 link: https://github.com/NTTDATA-DACH/BSI-GS-Benutzerdefinierte-Edition23-OSCAL
 category:
   - open-source
+  - free
   - international
 country: Germany
 ---
