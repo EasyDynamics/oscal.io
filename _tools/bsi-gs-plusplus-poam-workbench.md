@@ -1,8 +1,8 @@
 ---
-title: BSI Grundschutz++ POA&M Workbench
+title: BSI Grundschutz++ OSCAL Workbench
 author: NTT Data
 license: CC BY-SA 4.0
-link: https://github.com/AG-3-Nutzergenerierte-Inhalte/Stand-der-Technik-Bibliothek/tree/main/Nutzergenerierte-Inhalte/tools
+link: https://github.com/NTT-Data-Deutschland-SE/Grundschutz-Plus-Plus-Tools/tree/main/One-Page-Apps
 category:
   - open-source
   - free

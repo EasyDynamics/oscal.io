@@ -2,7 +2,7 @@
 title: BSI Grundschutz++ OSCAL Components Creator
 author: NTT Data
 license: Apache-2.0 license
-link: https://github.com/AG-3-Nutzergenerierte-Inhalte/AG-3-Tooling/tree/main/ai_tool
+link: https://github.com/NTT-Data-Deutschland-SE/Grundschutz-Plus-Plus-Tools/tree/main/Gpp-ai-tool
 category:
   - open-source
   - free
