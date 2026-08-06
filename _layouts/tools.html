@@ -7,14 +7,16 @@ custom-scripts:
 
 {{ content }}
 
-<div class="d-flex flex-wrap gap-2 mb-4" id="tool-filters">
-  <button class="btn btn-secondary active" data-filter="all">All</button>
-  <button class="btn btn-outline-secondary" data-filter="open-source">Open Source</button>
-  <button class="btn btn-outline-secondary" data-filter="source-available">Source Available</button>
-  <button class="btn btn-outline-secondary" data-filter="closed-source">Closed Source</button>
-  <button class="btn btn-outline-secondary" data-filter="free">Free</button>
-  <button class="btn btn-outline-secondary" data-filter="paid">Paid</button>
-  <button class="btn btn-outline-secondary" data-filter="international">International</button>
+<div class="d-flex flex-wrap gap-2 mb-4" id="tool-filters" role="group" aria-label="Filter tools">
+  <button type="button" class="btn btn-outline-secondary" data-filter="open-source" aria-pressed="false">Open Source</button>
+  <button type="button" class="btn btn-outline-secondary" data-filter="source-available" aria-pressed="false">Source Available</button>
+  <button type="button" class="btn btn-outline-secondary" data-filter="closed-source" aria-pressed="false">Closed Source</button>
+  <button type="button" class="btn btn-outline-secondary" data-filter="free" aria-pressed="false">Free</button>
+  <button type="button" class="btn btn-outline-secondary" data-filter="paid" aria-pressed="false">Paid</button>
+  <button type="button" class="btn btn-outline-secondary" data-filter="international" aria-pressed="false">International</button>
+  <button type="button" class="btn btn-link text-danger text-decoration-none" data-filter="all" disabled>
+    <i class="bi bi-x-circle" aria-hidden="true"></i> Clear all
+  </button>
 </div>
 
 <div class="row row-cols-1 row-cols-md-3 g-4" id="tool-grid">
